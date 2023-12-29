@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import LoaderHome from './components/Loader';
+import Home from './components/Home';
 
 function App() {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
       {isLoading ? <LoaderHome /> : null}
+      <Home/>
     </div>
   );
 }
